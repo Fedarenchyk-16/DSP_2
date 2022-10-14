@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"
+        ></script>
+        <span>Variant 2</span>
+    </head>
+    <body>
+        <div id="content" align="center">
+            <canvas id="myChartFirst" width="1000" height="600"></canvas>
+        </div>
+        <div id="content" align="center">
+            <canvas id="myChartFirstA" width="1000" height="600"></canvas>
+        </div>
+        <div id="sqrVal" style="display: none; flex-direction: column"></div>
+
+        <div id="content" align="center">
+            <canvas id="myChartSecond" width="1000" height="600"></canvas>
+        </div>
+        <div id="content" align="center">
+            <canvas id="myChartSecondA" width="1000" height="600"></canvas>
+        </div>
+        <div
+            id="sqrValWithFi"
+            style="display: none; flex-direction: column"
+        ></div>
+
+        <script src="FirstDiagram.js"></script>
+        <script src="SecondDiagram.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("load", function () {
+                FirstDiagram();
+                SecondDiagram();
+            });
+        </script>
+    </body>
+</html>
